@@ -41,8 +41,8 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      // .get("https://combined-data5.free.beeceptor.com/combined-data")
-      .get("")
+      .get("https://combined-data5.free.beeceptor.com/combined-data")
+      // .get("")
       .then((response) => {
         if (response.data && response.data.counts) {
           setTotalSlots(response.data.counts.totalSlots || 0);
@@ -63,8 +63,8 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-    //   .get("https://vehnum3.free.beeceptor.com/vehNum3")
-      .get("http://localhost:3000/vehicles")
+      .get("https://vehnum3.free.beeceptor.com/vehNum3")
+      // .get("http://localhost:3000/vehicles")
       .then((response) => {
         const vehicles = response.data;
 
