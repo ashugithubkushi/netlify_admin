@@ -1,0 +1,1295 @@
+/* slots  */
+.time-slot-button {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .time-slot-button.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .time-slot-button.booked {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .time-slot-button.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  
+  
+  
+  .container{
+    width: 100% ;
+    }
+  
+  .text1 {
+    /* background-image: url('D:\Atmos_vehicle_slot_bookings\admin\src\image\qvHT5o.jpg'); */
+  
+    background-size: 30px 30px; 
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 50px;
+  font-size: xx-large;
+  color: #385a29;
+  }
+  
+  
+  /* nav bar  */
+  .MuiPaper-root{
+    background-color: #e3d2e3;;
+  }
+  
+  
+  /* Typography */
+  .text1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark gray text */
+  }
+  
+  /* Spacing and Layout */
+  .user {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  /* Icons and Visual Elements */
+  .MuiSvgIcon-root {
+    fill: #666; /* Dark gray icon color */
+  }
+  
+  /* Backgrounds and Shadows */
+  .AppBar {
+    background-color: #fff; /* Light gray app bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Forms and Inputs */
+  .input-field {
+    border: 1px solid #bdbbbb; /* Light gray border */
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 600px) {
+    /* Adjustments for smaller screens */
+  }
+  
+  /* Accessibility */
+  .list-item {
+    color: #333; /* Dark gray text */
+    background-color: #fff; /* White background */
+  }
+  
+  .list-item:hover {
+    background-color: #fff; /* Light gray hover effect */
+  }
+  
+  
+  
+  /* Sidebar  */
+  
+  .MuiBox-root {
+    /* background-color: #cad3c6; */
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  /* .MuiPaper-root {
+    background-color: #576c5a;
+  } */
+  /* Styling for list items */
+  .MuiListItemButton-root:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .MuiListItemIcon-root,
+  .MuiListItemText-primary {
+    color: #333; /* Default color for icons and text */
+  }
+  
+  /* Change color of icons on hover */
+  .MuiListItemButton-root:hover .MuiListItemIcon-root {
+    color: #4e6d53; /* Change icon color on hover */
+    text-decoration: solid;
+  }
+  
+  /* Change color of text on hover */
+  .MuiListItemButton-root:hover .MuiListItemText-primary {
+    color: #4e6d53; /* Change text color on hover */
+  }
+  
+  /* Styling for sidebar hover effect */
+  /* .MuiDrawer-paper {
+    background-color: rgba(120, 48, 27, 0.1);
+  } */
+  
+  
+  
+  
+  .MuiList-root .MuiListItem-root {
+    padding: 12px 16px; /* Adjust padding as needed */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+  
+  
+  
+  
+  .date-input {
+    width: 90%; /* Adjust width as needed */
+    padding: 9px; /* Adjust padding as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    border: 1px solid #e1e1e1; /* Adjust border style as needed */
+    border-radius: 4px; /* Adjust border radius as needed */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .grid-containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 10px; /* Adjust as needed */
+  }
+  
+  .grid-items {
+    background-color: #fff; /* Example background color */
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px
+  }
+  
+  
+  /* Assuming you are using Bootstrap classes or similar for flex utilities */
+  
+  /* .grid-items {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  } */
+  
+  .grid-card {
+    display: flex;
+    justify-content: space-between; /* Align items at the ends */
+    align-items: center; /* Center vertically */
+  }
+  
+  .count-text {
+    flex: 1; /* Takes up remaining space */
+    margin-left: 10px;
+  }
+  
+  .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Adjust width as needed */
+    height: 80px; /* Adjust height as needed */
+    /* border: 1px solid #b5baf0;  */
+    background-color: #b5baf0;
+    border-radius: 15%; /* To create a circular shape */
+    padding: 10px; /* Space between border and icon */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    padding: 10px;
+  }
+  
+  .grid-items {
+    /* Your existing styles for grid-items */
+    /* Make sure this container is styled properly, e.g., display: flex, etc. */
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .grid-items:hover .icon-wrapper {
+    background-color: lightblue; /* Change color on hover */
+    transform: scale(1.1);
+  }
+  
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  
+  /* .icon-wrapper {
+    transition: background-color 0.3s ease;
+    padding: 10px;
+  } */
+  
+  /* .icon-wrapper:hover {
+    background-color: #8c94f0; 
+  } */
+  
+  .list-icon {
+    width: 100%; /* Ensure the SVG icon fills the container */
+    height: 100%; /* Ensure the SVG icon fills the container */
+    fill: blue; /* Default color of the List icon */
+    transition: fill 0.3s; /* Smooth transition for color change */
+  }
+  
+  /* .icon-wrapper:hover .list-icon {
+    fill: white; 
+  } */
+  
+  
+  @media (min-width: 400px) {
+    .grid-containers {
+      grid-template-columns: repeat(1, 1fr); /* Two columns on small screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .grid-containers {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid-containers {
+      grid-template-columns: repeat(3, 1fr); /* Three columns on desktops */
+    }
+  }
+  
+  
+  
+  
+  /* popup hover*/
+  .message-box {
+    position: absolute;
+    height: auto;
+    width: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Optional: add a smooth transition */
+  }
+  
+  .message-box.show {
+    display: block; /* Display when show class is present */
+  }
+  
+  
+  
+  .secondcard-body{
+    height: 430px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  
+  .card-body{
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .vehicle-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust spacing */
+    object-fit: contain; /* Ensures the image scales within its container */
+    float: inline-end;
+  }
+  
+  .vehicle-details {
+    cursor: pointer; /* Show cursor pointer on hover/click */
+  }
+  
+  .card-title {
+    margin-bottom: 0; /* Adjust spacing as needed */
+  }
+  
+  /* //icon  */
+  
+  
+  .custom-bg-color2 {
+    background-color: #cfdcdf; /* Replace with your desired background color */
+  }
+  .custom-bg-color1 {
+    background-color: #ceded5; /* Replace with your desired background color */
+  }
+  .custom-bg-color3 {
+    background-color: #e5d3e0; /* Replace with your desired background color */
+  }
+  /* 
+  .size{
+    width: 405px;
+    height: 45px;
+  } */
+  
+  .thank-you{
+    font-size: 25px;
+    color: #598460;
+  }
+  .thank-you1{
+    font-size: 25px;
+    color: #b2818d;
+  }
+  /* 
+  .row{
+    margin-left: 30px;
+  } */
+  
+  .col {
+    background-color: #fff;
+  }
+  
+  
+  
+  
+  
+    .container1 {
+      display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        position: fixed;
+      max-width: 1750px;
+    }
+    
+    .box1 {
+      width: 150px;
+      padding: 20px;
+      background-color: #ede9e9;
+      text-align: center;
+      transition: transform 0.3s ease;
+      height: 75px;
+    }
+    
+    .box:hover {
+      /* transform: translateY(-10px); */
+      transform: scaleX(1.3);
+      transition: 1s;
+      background-color: #95b09a;
+    
+    /* 
+      transform: rotate(360deg);
+      transition: 2s; */
+    }
+    
+    .text2 {
+      text-align: center; /* Centers inline content horizontally */
+    }
+    
+    .text2 p {
+      margin: 0; /* Resets default margin */
+    }
+    
+    
+    .txt-color{
+      color: #598460;
+      margin-left: 30px;
+    }
+    
+    /* test */
+    
+    .center{
+      position: fixed;
+    }
+    
+    .body { 
+      margin: 0; 
+      padding: 0; 
+      /* height: 100vh;  */
+      height: 85vh;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    } 
+    
+    .slider { 
+      width: 1000px; 
+      height: 500px; 
+      border-radius: 10px; 
+      overflow: hidden; 
+      /* margin-top: 10px; */
+    } 
+    
+    .imgs_slides { 
+      width: 500%; 
+      height: 500px; 
+      display: flex; 
+    } 
+    
+    /* We have to set display: none; 
+    If not, all of our images would  
+    be visible at the same time */
+    .imgs_slides input { 
+      display: none; 
+    } 
+    
+    .slide { 
+      width: 20%; 
+      transition: 2s; 
+    } 
+    
+    .slide img { 
+      /* width: 800px;  */
+      width: 100%; 
+      height: 500px; 
+      margin-top: 50px;
+    } 
+    
+    /* css for slide navigation */
+    .navigation { 
+      position: absolute; 
+      width: 1000px; 
+      margin-top: -40px; 
+      display: flex; 
+      justify-content: center; 
+    } 
+    
+    .navigation-btn { 
+     text-decoration: none;
+      padding: 5; 
+      /* border-radius: 5px;  */
+      cursor: pointer; 
+      transition: 1s;
+    } 
+    
+    .navigation-btn:not(:last-child) { 
+      margin-right: 40px; 
+    } 
+    
+    .navigation-btn:hover { 
+      background: #749379; 
+      padding: 1px;
+    } 
+    
+    /* The checked attribute is used with 
+    reference to <input type="radio">,  
+    when radio button is clicked the  
+    class will shift w.r.t  left margin  
+    as mentioned which results in image  
+    slider */
+    #radio1:checked~.first { 
+      margin-left: 0; 
+    } 
+    
+    #radio2:checked~.first { 
+      margin-left: -20%; 
+    } 
+    
+    #radio3:checked~.first { 
+      margin-left: -40%; 
+    } 
+    
+    #radio4:checked~.first { 
+      margin-left: -60%; 
+    } 
+    
+    #radio5:checked~.first { 
+      margin-left: -80%; 
+    } 
+    
+    
+    
+    
+    /* form{
+        border: 1px solid #000;
+    } */
+    /* body */
+    /* .container1 {
+      display: flex;
+      justify-content: space-around; 
+      align-items: center;
+    } */
+    
+    .grid-container1 {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; /* Center items horizontally */
+      gap: 20px; /* Adjust the space between items */
+    
+    }
+    
+    .grid-item {
+      flex: 1;
+      text-align: center; /* Center content */
+      /* padding: 10px; */
+      border: 1px solid #ccc; /* Add borders for visualization */
+      cursor: pointer; /* Show cursor on hover */
+      width: 150px; 
+      height: 75px;
+    }
+    
+    .disabled {
+      opacity: 0.5; /* Reduce opacity for disabled items */
+      cursor: not-allowed; /* Show not-allowed cursor for disabled items */
+    }
+    
+    
+    .auth-inner table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #000;
+      }
+      
+      .auth-inner th, .auth-inner td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #000;
+      }
+      
+      .auth-inner th {
+        background-color: #f2f2f2;
+        border-right: 2px solid #ddd;
+        border: 1px solid #000;
+      }
+      
+      /* Hide table headers on small screens */
+      @media screen and (max-width: 600px) {
+        .auth-inner th {
+          display: none;
+        }
+        .auth-inner td {
+          display: block;
+          border: none;
+        }
+      }
+    
+    
+      /* booked slots */
+      .booked-slot {
+        background-color: #ffcccc; /* Change this to your desired color */
+      }
+      
+      .booked-slot:hover::before {
+        content: "Booked";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        z-index: 1;
+      }
+    
+    
+    
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+        grid-gap: 10px; /* Spacing between grid items */
+        padding: 60px; /* Padding for the container */
+        grid-template-columns: repeat(3, 1fr);
+        margin: 60px;
+      }
+      
+      .grid-item {
+        background-color: #b04545; /* White background for grid items */
+        border: 1px solid #ddd; /* Gray border */
+        text-align: center; /* Center text alignment */
+        cursor: pointer; /* Indicate clickable elements */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 60px; /* Padding inside grid items */
+        text-align: center; /* Center text inside grid items */
+        grid-column: span 1; /* Make each grid item span 1 column */
+        margin: 30px;
+        /* border-radius: 10px; */
+        margin-top: 80px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+      }
+    
+      
+      .grid-item:hover {
+        background-color: #f0f0f0; /* Light gray background on hover */
+      }
+      
+      .grid-item.active { /* Optional: Style for active grid item */
+        background-color: #e0e0e0; /* Light blue background for active item */
+        border: 1px solid #ccc; /* Adjust border color for active item */
+      }
+    
+    
+    
+    
+    
+      /* vehicles.css */
+    
+    .grid-container {
+      display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+        grid-gap: 5px; /* Spacing between grid items */
+        padding: 60px; /* Padding for the container */  
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 30px;
+    }
+    
+    .grid-item {
+      position: relative;
+      padding: 20px;
+      background-color: #3498db; /* Default background color */
+      color: #fff; /* Default text color */
+      transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+      background-color: #b04545; /* White background for grid items */
+      border: 1px solid #ddd; /* Gray border */
+      cursor: pointer; /* Indicate clickable elements */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      padding: 60px; /* Padding inside grid items */
+      text-align: center; /* Center text inside grid items */
+      grid-column: span 1; /* Make each grid item span 1 column */
+      margin: 15px;
+      /* border-radius: 10px; */
+      /* margin-top: 80px; */
+      /* box-shadow: 0px 25px 15px rgba(0, 0, 0, 0.4); */
+      box-shadow: 0px 25px 15px rgba(0, 0, 0, 0.2 ), 0px 6px 10px rgba(0, 0, 0, 0.6);
+    
+    }
+    
+    
+    .grid-item::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: transparent; /* Initial color */
+      transition: background-color 0.3s ease; /* Smooth transition */
+    }
+    
+    .grid-item:hover::after {
+      background-color: none;  /* Change to desired color on hover */
+      
+    }
+    
+    .grid-item:hover {
+       transform: translateY(-8px); /* Adjust the amount of transformation as needed */
+      transition: transform 0.3s ease; /* Smooth transition */
+      color: rgb(150, 71, 71);
+      background-color: #ddd;
+    }
+    
+    
+    
+    
+    
+    /* //selectdate.css */
+     /*  */
+    
+     .date-picker {
+      width: 135%;
+      margin-right: 38px;
+       }
+      
+       .date-picker-wrapper {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin-top: 60px;
+      }
+      
+      /* Styling for the input field */
+      .react-datepicker-wrapper {
+        display: inline-block;
+        margin-right: 10px;
+        width: 50%;
+      }
+      
+      .react-datepicker__input-container input {
+        border: 2px solid #b04545; /* Blue border */
+        border-radius: 5px;
+        padding: 8px 10px;
+        font-size: 16px;
+        outline: none;
+      }
+      
+      /* Styling for the calendar */
+      .react-datepicker {
+        font-family: Arial, sans-serif;
+        border-radius: 5px;
+        border: 2px solid #b04545; /* Blue border */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+      }
+      
+      .react-datepicker__header {
+        background-color: #b04545; /* Blue header */
+        border-bottom: none;
+      }
+      
+      .react-datepicker__current-month {
+        color: #fff; /* White text */
+      }
+      
+      .react-datepicker__day {
+        color: #333; /* Black text */
+      }
+      
+      .react-datepicker__day:hover {
+        background-color: #f0f0f0; /* Light gray background on hover */
+      }
+      
+      .react-datepicker__day--selected {
+        background-color: #b04545; /* Blue background for selected date */
+        color: #fff; /* White text for selected date */
+      }
+      
+      .react-datepicker__day--disabled {
+        color: #ccc; /* Light gray text for disabled dates */
+      }
+      
+      /* Previous and next month arrows */
+      .react-datepicker__navigation {
+        top: 10px; /* Adjust position */
+      }
+      
+      .react-datepicker__navigation--previous {
+        border-right-color: #b04545; /* Blue color for previous month arrow */
+      }
+      
+      .react-datepicker__navigation--next {
+        border-left-color: #b04545; /* Blue color for next month arrow */
+      }
+      
+      .error-popup {
+        position: absolute;
+        background-color: #ffcccc;
+        color: #ff0000;
+        padding: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+        margin-top: 50px; /* Adjust the margin to give space below the date picker */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+      }
+    
+    
+      .selected-slot {
+        background-color: blue; /* or any other color you prefer */
+      }
+      
+    
+      .form-group{
+          width: calc(100% - 10px);
+          /* padding: 8px; */
+          /* border: 1px solid #ccc; */
+          /* border-radius: 4px; */
+          /* margin-bottom: 15px; */
+          /* margin-top: 10px; */
+      }
+      
+      .select-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2px;
+        padding: 80px; /* Padding for the container */
+        margin: 10px;
+        border: 1px solid #ddd; /* Gray border */
+        text-align: center; /* Center text alignment */
+        cursor: pointer; /* Indicate clickable elements */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 60px; /* Padding inside grid items */
+        text-align: center; /* Center text inside grid items */
+        grid-column: span 1; /* Make each grid item span 1 column */
+        margin: 30px;
+        /* border-radius: 10px; */
+        margin-top: 80px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+      }
+      
+      
+      .select-item {
+        background-color: #b04545; /* White background for grid items */
+        border: 1px solid #ddd; /* Gray border */
+        text-align: center; /* Center text alignment */
+        cursor: pointer; /* Indicate clickable elements */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 20px; /* Padding inside grid items */
+        text-align: center; /* Center text inside grid items */
+        grid-column: span 1; /* Make each grid item span 1 column */
+        margin: 30px;
+        margin-top: 10px;
+        /* border-radius: 10px; */
+        /* margin-top: 80px; */
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+      }
+      
+      .select-item1{
+        background-color: #b04545; 
+        border: 1px solid #ddd; /* Gray border */
+        text-align: center; /* Center text alignment */
+        cursor: pointer; /* Indicate clickable elements */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 20px; /* Padding inside grid items */
+        text-align: center; /* Center text inside grid items */
+        grid-column: span 1; /* Make each grid item span 1 column */
+        margin: 30px;
+        margin-top: 50px;
+        /* border-radius: 10px; */
+        /* margin-top: 80px; */
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+      }
+    
+      .select-item1.booked-clicked {
+        background-color: #928a8a; /* Change to your desired color */
+        color: #000; /* Change to your desired text color */
+      }
+      
+      
+      .select-item:hover {
+        background-color: #f0f0f0;
+      }
+  
+    
+      
+      .select-item.active {
+        background-color: #e0e0e0; 
+        border: 1px solid #ccc;
+      }
+      
+      
+      
+        /* popup */
+        .popup-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .popup {
+          margin-left: 1250px;
+          background-color: #fff;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 30px;
+          padding-bottom: 20px;
+          border-radius: 8px;
+          max-width: 80%; /* Adjust as needed */
+        }
+        
+        .popup-content {
+          text-align: center;
+        }
+        .popup-content h4{
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        
+        .form-group {
+          margin-bottom: 15px;
+  
+  
+        }
+        
+        .form-group label {
+          display: block;
+          margin-bottom: 5px;
+          float: inline-start;
+        }
+        
+        .form-group input {
+          width: calc(100% - 10px); /* Adjust for padding */
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+        
+        .form-group1 {
+          margin-bottom: 15px;
+        }
+        
+        .form-group1 label {
+          display: block;
+          margin-bottom: 5px;
+          float: inline-start;
+        }
+        
+        .form-group1 input {
+          width: calc(100% - 10px); /* Adjust for padding */
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+        
+        /* button {
+          padding: 8px 20px;
+          background-color: #b04545;
+          color: #fff;
+          border: none;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+       } */
+      
+       .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #a43535;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+        
+      
+        
+        button:hover {
+          background-color: #831d1d;
+        }
+      
+        
+        /* Media query for responsiveness */
+        /* @media (max-width: 768px) {
+          .select-container {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          }
+        } */
+      
+        /* Common styles for both desktop and mobile */
+      .date-picker {
+        width: 100%;
+        margin-right: 0;
+      }
+      
+      .date-picker-wrapper {
+        position: relative;
+        margin-bottom: 10px;
+      }
+      
+      .react-datepicker-wrapper {
+        display: inline-block;
+        margin-right: 10px;
+        width: 50%;
+      }
+      
+      /* Desktop styles */
+      @media (min-width: 768px) {
+        .date-picker {
+          width: 135%;
+          margin-right: 38px;
+        }
+      
+        .date-picker-wrapper {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+      }
+    
+      /* table */
+      .auth-inner table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #000;
+      }
+      
+      .auth-inner th, .auth-inner td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #000;
+      }
+      
+      .auth-inner th {
+        background-color: #f2f2f2;
+        border-right: 2px solid #ddd;
+        border: 1px solid #000;
+      }
+      
+      /* Hide table headers on small screens */
+      @media screen and (max-width: 600px) {
+        .auth-inner th {
+          display: none;
+        }
+        .auth-inner td {
+          display: block;
+          border: none;
+        }
+      }
+      
+      
+      /* Mobile styles */
+      @media (max-width: 767px) {
+        .select-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 20px;
+        }
+      
+        .select-item {
+          width: calc(50% - 20px);
+          margin: 10px;
+        }
+      
+        .popup {
+          margin-left: 0;
+        }
+      }
+      
+      
+      
+      
+      
+       
+      
+        
+    
+    /* Media query for responsiveness */
+    /* @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    } */
+    @media screen and (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+    
+    
+    
+    /* slider */
+    .slider-container {
+     /* Set the height to 70% of viewport height */
+      position: relative;
+      display: flex;
+    }
+    
+    .simple-image-slider {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .simple-image-slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensure the complete image is displayed without cropping */
+    }
+  
+    .box2:hover {
+      /* transform: scale(1.2); */
+      background-color: #7e443b;
+    }
+  
+  
+    
+    
+    .boxes2-container {
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: space-between; */
+      /* margin-left: 0px;
+      /* margin-top: 150px; */
+      margin-top: 20px; 
+      margin-left: 20px;
+      margin-right: 20px;
+      /* position: static; */
+      right: 0;
+      top: 0;
+    }
+    
+    .box2 {
+      width: calc(33.33% - 20px); /* Adjust for margin */
+      margin-bottom: 50px;
+      background-color: #38653b;
+      color: #fff;
+      font-weight: 400;
+      font-size: medium;
+      padding: 50px;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    /* Adjust box width for smaller screens */
+    @media screen and (max-width: 768px) {
+      .boxes2-container {
+        width: 80%;
+      }
+      
+      .box2 {
+        width: calc(50% - 20px);
+      }
+    }
+    
+    /* Adjust box width for even smaller screens */
+    @media screen and (max-width: 480px) {
+      .boxes2-container {
+        width: 100%;
+      }
+      
+      .box2 {
+        width: calc(100% - 20px);
+      }
+    }
+    
+    
+    .time-slot-button {
+      /* Base styles for time slots */
+    }
+    
+    .time-slot-button.booked {
+      background-color: #f00; /* Example booked color */
+      color: #fff;
+    }
+    
+    .time-slot-button.disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+      background-color: #631908;
+      color: white;
+    }
+   /* slots */
+   .time-slot-selector {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%; /* Make the component width 100% */
+    /* Limit the maximum width for better responsiveness */
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+   
+  }
+  
+  .header {
+    margin-bottom: 10px;
+    text-align: center; /* Center align the header */
+  }
+  
+  .time-slots {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space evenly between items */
+  }
+  
+  .time-slot-button { /* Adjust button width based on container */
+    margin: 10px;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; 
+    background-color: #88c898;
+    border: none;
+    border-radius: 7px;
+    width: 100px;
+    display: inline-block;;
+  }
+  
+  /* .time-slot-button:hover {
+    background-color: #05d138;
+  } */
+  
+  
+  .container {
+    display: flex;
+    justify-content: space-between; /* Ensures items are at the beginning and end */
+    align-items: center; /* Centers items vertically */
+    padding: auto; /* Padding for spacing */
+    /* margin: 10px; */
+    margin-left: 10px;
+  }
+  
+  .left-content {
+    /* Optional: Adjust styles for content A */
+  }
+  
+  .right-content {
+   display: flex;
+  }
+  
+  
+  /* radio button  */
+  /* Hide the default radio button */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Style the label to create a custom appearance for the radio button */
+  input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; /* Adjust as needed */
+    cursor: pointer;
+    line-height: 20px; /* Adjust to center vertically */
+  }
+  
+  /* Create the custom indicator */
+  input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Size of the indicator */
+    height: 20px; /* Size of the indicator */
+    /* border: 2px solid #000;  */
+    background-color: #88c898; /* Background color */
+    border-radius: 50%; /* Make it circular */
+  }
+  
+  /* radio1 */
+  input[type="radio1"] {
+    display: none;
+  }
+  
+  /* Style the label to create a custom appearance for the radio1 button */
+  input[type="radio1"] + label {
+    position: relative;
+    padding-left: 30px; /* Adjust as needed */
+    cursor: pointer;
+    line-height: 20px; /* Adjust to center vertically */
+  }
+  
+  /* Create the custom indicator */
+  input[type="radio1"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Size of the indicator */
+    height: 20px; /* Size of the indicator */
+    /* border: 2px solid #000;  */
+    background-color: #c96666; /* Background color */
+    border-radius: 50%; /* Make it circular */
+  }
+  
+  /* Style for when the radio button is checked */
+  /* input[type="radio"]:checked + label:before {
+    background-color: #007bff; 
+  } */
+  
+  
+  .booked {
+    /* Styles for booked slots */
+  }
+  
+  .disabled {
+    pointer-events: none; /* Prevent clicking on disabled slots */
+    opacity: 0.5; /* Optionally reduce opacity for disabled slots */
+    /* Additional styling as needed */
+  }

@@ -1,0 +1,41 @@
+/* sidebar.css */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+  }
+  
+  .sidebar-header .MuiIconButton-root {
+    margin: 10px;
+  }
+  
+  .Mui-selected {
+    background-color: rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  .MuiListItem-root {
+    padding: 10px 15px;
+  }
+  

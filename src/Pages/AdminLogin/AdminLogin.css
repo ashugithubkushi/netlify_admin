@@ -1,0 +1,134 @@
+.form {
+    background-image: url('https://cdn.wallpapersafari.com/94/95/qvHT5o.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: "fixed";
+       width: "100%";
+       height: "100%";
+       z-Index: -1;
+       opacity: 1;
+  }
+  
+  /* .text1 {
+    background-image: url('D:\Atmos_vehicle_slot_bookings\admin\src\image\Vector Smart Object 1.png');
+    
+    background-size: 30px 30px; 
+    background-repeat: no-repeat;
+    background-position: left center;
+  } */
+  
+  .atmos {
+    padding: 8px 40px; /* Adjust padding as needed */
+    background-color: transparent;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-box {
+    border: 1px solid #ccc;
+    /* padding: 20px; */
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    max-width: 450px;
+    width: 100%;
+    margin: 20px;
+    height: 50vh;
+    padding-top: 30px;
+  }
+  
+  .text-form {
+    margin-bottom: 40px;
+    display: grid;
+    place-items: center;
+    height: 100%;
+  }
+  
+  .form-group{
+    margin-top: 30px;
+    border-radius: 5px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .input-field {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 93%;
+    margin: 10px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .login-btn {
+    margin-bottom: 10px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .submit-button {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .colorful-button {
+    background: linear-gradient(to top, #234b25, #45a049); /* Gradient from green to darker green in the y-direction */
+    padding: 8px 40px; /* Adjust padding as needed */
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    /* color: white; */
+  }
+  
+  .colorful-button:hover {
+    background: linear-gradient(to bottom, #234b25, #45a049); /* Reverse gradient on hover */
+  }
+  
+  
+  .custom-text-field .MuiInputLabel-root {
+    color: #000; /* text color */
+    font-size: 1rem; /* font size */
+    font-weight: bold; /* font weight */
+  }
+  
+  
+  
+  
+  .custom-text-field .MuiOutlinedInput-root {
+    border-color: #000; /* border color */
+  }
+  
+  .custom-text-field .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #000; /* border color on hover */
+  }
+  
+  .custom-text-field .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #000; /* border color when focused */
+  }

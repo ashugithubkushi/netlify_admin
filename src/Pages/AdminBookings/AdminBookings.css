@@ -1,0 +1,600 @@
+
+
+/* table */
+
+.divider-row {
+    border-bottom: 1px solid #ddd; /* Example bottom border */
+  }
+  
+  
+  .table-container {
+    overflow-x: auto;
+    margin: 10px;
+  }
+  
+  .table-container1{
+    padding: 20px;
+    background-color: #fff;
+    margin-left:2px;
+    margin-right:2px;
+    border-radius: 10px;
+  }
+  
+  table {
+    width: 100%;
+    /* border-collapse: collapse; */
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f1f1f6;
+  }
+  
+  /* table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } */
+  
+  table tr:hover {
+    /* background-color: #f9f6f6; */
+  }
+  
+  .table-no-border {
+    border-collapse: collapse; /* Collapse borders between cells */
+  }
+  
+  .table-no-border th,
+  .table-no-border td {
+    border: none; /* Remove borders from table header cells and table data cells */
+    padding: 18px; /* Optional: Add padding to cells */
+  }
+  
+  .slot{
+    margin-left: 50px;
+  }
+  
+  /* filter  */
+  
+  
+  
+  
+  
+    /* booked slots */
+  
+  
+  
+   
+  
+    .booked-slot {
+      background-color: #ffcccc; /* Change this to your desired color */
+    }
+    
+    .booked-slot:hover::before {
+      content: "Booked";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      z-index: 1;
+    }
+  
+  
+  
+    .grid-container {
+      display: grid;
+      /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+      grid-gap: 10px; /* Spacing between grid items */
+      padding: 60px; /* Padding for the container */
+      grid-template-columns: repeat(3, 1fr);
+      margin: 60px;
+    }
+    
+    .grid-item {
+      background-color: #b04545; /* White background for grid items */
+      border: 1px solid #ddd; /* Gray border */
+      text-align: center; /* Center text alignment */
+      cursor: pointer; /* Indicate clickable elements */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      padding: 60px; /* Padding inside grid items */
+      text-align: center; /* Center text inside grid items */
+      grid-column: span 1; /* Make each grid item span 1 column */
+      margin: 30px;
+      /* border-radius: 10px; */
+      margin-top: 80px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+    }
+  
+    
+    .grid-item:hover {
+      background-color: #f0f0f0; /* Light gray background on hover */
+    }
+    
+    .grid-item.active { /* Optional: Style for active grid item */
+      background-color: #e0e0e0; /* Light blue background for active item */
+      border: 1px solid #ccc; /* Adjust border color for active item */
+    }
+  
+  
+  
+  
+  
+    /* vehicles.css */
+  
+  .grid-container {
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+      grid-gap: 5px; /* Spacing between grid items */
+      padding: 60px; /* Padding for the container */  
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 30px;
+  }
+  
+  .grid-item {
+    position: relative;
+    padding: 20px;
+    background-color: #3498db; /* Default background color */
+    color: #fff; /* Default text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    background-color: #b04545; /* White background for grid items */
+    border: 1px solid #ddd; /* Gray border */
+    cursor: pointer; /* Indicate clickable elements */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 60px; /* Padding inside grid items */
+    text-align: center; /* Center text inside grid items */
+    grid-column: span 1; /* Make each grid item span 1 column */
+    margin: 15px;
+    /* border-radius: 10px; */
+    /* margin-top: 80px; */
+    /* box-shadow: 0px 25px 15px rgba(0, 0, 0, 0.4); */
+    box-shadow: 0px 25px 15px rgba(0, 0, 0, 0.2 ), 0px 6px 10px rgba(0, 0, 0, 0.6);
+  
+  }
+  
+  
+  .grid-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: transparent; /* Initial color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .grid-item:hover::after {
+    background-color: none;  /* Change to desired color on hover */
+    
+  }
+  
+  .grid-item:hover {
+     transform: translateY(-8px); /* Adjust the amount of transformation as needed */
+    transition: transform 0.3s ease; /* Smooth transition */
+    color: rgb(150, 71, 71);
+    background-color: #ddd;
+  }
+  
+  
+  
+  
+  
+  /* //selectdate.css */
+   /*  */
+  
+   .date-picker {
+    width: 135%;
+    margin-right: 38px;
+     }
+    
+     .date-picker-wrapper {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      margin-top: 60px;
+    }
+    
+    /* Styling for the input field */
+    .react-datepicker-wrapper {
+      display: inline-block;
+      margin-right: 10px;
+      width: 50%;
+    }
+    
+    .react-datepicker__input-container input {
+      border: 2px solid #b04545; /* Blue border */
+      border-radius: 5px;
+      padding: 8px 10px;
+      font-size: 16px;
+      outline: none;
+    }
+    
+    /* Styling for the calendar */
+    .react-datepicker {
+      font-family: Arial, sans-serif;
+      border-radius: 5px;
+      border: 2px solid #b04545; /* Blue border */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    }
+    
+    .react-datepicker__header {
+      background-color: #b04545; /* Blue header */
+      border-bottom: none;
+    }
+    
+    .react-datepicker__current-month {
+      color: #fff; /* White text */
+    }
+    
+    .react-datepicker__day {
+      color: #333; /* Black text */
+    }
+    
+    .react-datepicker__day:hover {
+      background-color: #f0f0f0; /* Light gray background on hover */
+    }
+    
+    .react-datepicker__day--selected {
+      background-color: #b04545; /* Blue background for selected date */
+      color: #fff; /* White text for selected date */
+    }
+    
+    .react-datepicker__day--disabled {
+      color: #ccc; /* Light gray text for disabled dates */
+    }
+    
+    /* Previous and next month arrows */
+    .react-datepicker__navigation {
+      top: 10px; /* Adjust position */
+    }
+    
+    .react-datepicker__navigation--previous {
+      border-right-color: #b04545; /* Blue color for previous month arrow */
+    }
+    
+    .react-datepicker__navigation--next {
+      border-left-color: #b04545; /* Blue color for next month arrow */
+    }
+    
+    .error-popup {
+      position: absolute;
+      background-color: #ffcccc;
+      color: #ff0000;
+      padding: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 5px;
+      margin-top: 50px; /* Adjust the margin to give space below the date picker */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+    }
+  
+  
+    .selected-slot {
+      background-color: blue; /* or any other color you prefer */
+    }
+    
+  
+    .form-group-input{
+        width: calc(100% - 10px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    .select-container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2px;
+      padding: 80px; /* Padding for the container */
+      margin: 10px;
+      border: 1px solid #ddd; /* Gray border */
+      text-align: center; /* Center text alignment */
+      cursor: pointer; /* Indicate clickable elements */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      padding: 60px; /* Padding inside grid items */
+      text-align: center; /* Center text inside grid items */
+      grid-column: span 1; /* Make each grid item span 1 column */
+      margin: 30px;
+      /* border-radius: 10px; */
+      margin-top: 80px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+    }
+    
+    
+    .select-item {
+      background-color: #b04545; /* White background for grid items */
+      border: 1px solid #ddd; /* Gray border */
+      text-align: center; /* Center text alignment */
+      cursor: pointer; /* Indicate clickable elements */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      padding: 20px; /* Padding inside grid items */
+      text-align: center; /* Center text inside grid items */
+      grid-column: span 1; /* Make each grid item span 1 column */
+      margin: 30px;
+      margin-top: 10px;
+      /* border-radius: 10px; */
+      /* margin-top: 80px; */
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+    }
+    
+    .select-item1{
+      background-color: #b04545; 
+      border: 1px solid #ddd; /* Gray border */
+      text-align: center; /* Center text alignment */
+      cursor: pointer; /* Indicate clickable elements */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      padding: 20px; /* Padding inside grid items */
+      text-align: center; /* Center text inside grid items */
+      grid-column: span 1; /* Make each grid item span 1 column */
+      margin: 30px;
+      margin-top: 50px;
+      /* border-radius: 10px; */
+      /* margin-top: 80px; */
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+    }
+  
+    .select-item1.booked-clicked {
+      background-color: #928a8a; /* Change to your desired color */
+      color: #000; /* Change to your desired text color */
+    }
+    
+    
+    .select-item:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .select-item.active {
+      background-color: #e0e0e0; 
+      border: 1px solid #ccc;
+    }
+    
+    
+    
+      /* popup */
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .popup {
+        margin-left: 1250px;
+        background-color: #fff;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        border-radius: 8px;
+        max-width: 80%; /* Adjust as needed */
+      }
+      
+      .popup-content {
+        text-align: center;
+      }
+      .popup-content h4{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  
+      /* form */
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      input[type="text"],
+      select,
+      input[type="time"],
+      .react-datepicker-wrapper {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+      
+      input[type="text"]:focus,
+      select:focus,
+      input[type="time"]:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+      
+      
+      /* button {
+        padding: 8px 20px;
+        background-color: #b04545;
+        color: #fff;
+        border: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+     } */
+    
+     .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #a43535;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+      
+    
+  /*     
+      button:hover {
+        background-color: #831d1d;
+      } */
+    
+      
+      /* Media query for responsiveness */
+      /* @media (max-width: 768px) {
+        .select-container {
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+      } */
+    
+      /* Common styles for both desktop and mobile */
+    .date-picker {
+      width: 100%;
+      margin-right: 0;
+    }
+    
+    .date-picker-wrapper {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    
+    .react-datepicker-wrapper {
+      display: inline-block;
+      margin-right: 10px;
+      width: 50%;
+    }
+    
+    /* Desktop styles */
+    @media (min-width: 768px) {
+      .date-picker {
+        width: 135%;
+        margin-right: 38px;
+      }
+    
+      .date-picker-wrapper {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  
+    /* table */
+    .table-no-border {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px; /* Optional: Adjust margin as needed */
+    }
+    
+    .table-no-border th,
+    .table-no-border td {
+      text-align: center; /* Center align text in all table headers and cells */
+      padding: 10px; /* Adjust padding as needed */
+    }
+    
+    .divider-row {
+      /* background-color: #f2f2f2;  */
+    }
+    
+    @media (max-width: 768px) {
+      .table-no-border th,
+      .table-no-border td {
+        font-size: 14px; /* Reduce font size on smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+      }
+    }
+    
+    
+    
+    /* Mobile styles */
+    @media (max-width: 767px) {
+      .select-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+      }
+    
+      .select-item {
+        width: calc(50% - 20px);
+        margin: 10px;
+      }
+    
+      .popup {
+        margin-left: 0;
+      }
+    }
+    
+    
+  /* time */
+  .datetime-picker {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  
+  .date-picker{
+    border: 1px solid #000;
+    flex: 1;
+    padding: 20px;
+  }
+  .time-picker-container {
+    flex: 1;
+  }
+  
+  .time-picker-container {
+    padding: 20px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px; /* Adjust as needed */
+  }
+  
+  
+  .time-picker {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .date-time{
+    margin: 30px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  
+  
+  
+  .dropdown-select {
+    width: 120px; 
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  .dropdown-select option {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+  }
